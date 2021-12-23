@@ -279,12 +279,12 @@ section {
 
     .hero__outer-copy-container {
         height: 100%;
-        width: 40%;
+        width: 50%;
     }
 
     .hero__image {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
         height: 100%;
-        width: 60%;
+        width: 50%;
     }
 }
