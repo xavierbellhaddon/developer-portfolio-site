@@ -7,17 +7,17 @@ window.addEventListener('resize', appHeight)
 const navSlide = () => {
     const burger = document.querySelector(".navbar__burger");
     const navList = document.querySelector(".navbar__list_mobile");
-    const navLinks = document.querySelectorAll(".navbar__list_mobile .navbar__link");
+    const navItems = document.querySelectorAll(".navbar__list_mobile .navbar__item");
   
   
     burger.addEventListener("click", () => {
       navList.classList.toggle("navbar__list_visible");
   
-      navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = "";
+      navItems.forEach((item, index) => {
+        if (item.style.animation) {
+          item.style.animation = "";
         } else {
-          link.style.animation = `navLinkFade 0.5s ease forwards ${
+          item.style.animation = `navLinkFade 0.5s ease forwards ${
             index / 7 + 0.5
           }s`;
         }
@@ -34,8 +34,8 @@ const navSlide = () => {
             burger.classList.contains("navbar__burger_toggled")
           ) {
               
-            navLinks.forEach((link) => {
-                  link.style.animation = "";
+            navItems.forEach((item) => {
+                  item.style.animation = "";
                 })
     
             navList.classList.remove("navbar__list_visible");
