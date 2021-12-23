@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #210446;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+}
+
+.navbar {
+    align-items: center;
+    background-color: #16052C;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.navbar__logo {
+    color: inherit;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navbar__logo, .navbar__link {
+    text-transform: uppercase;
+}
+
+.navbar__list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__link {
+    margin-right: 1rem;
+}
+
+.navbar__link:last-of-type {
+    margin: 0;
+}
+
+.navbar__link:hover {
+    cursor: pointer;
+}
+
+.navbar__link_active, .navbar__link:hover {
+    font-weight: 600;
+}
+
+.navbar__list_mobile {
+    display: none;
+}
+
+.hero__outer-copy-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero__text {
+    font-size: 2rem;
+}
+
+.hero__title, .hero__text {
+    padding-left: 2rem;
+}
+
+.services {
+    background-color: #440041;
+}
+
+.footer {
+    background-color: #16052C;
+}
+
