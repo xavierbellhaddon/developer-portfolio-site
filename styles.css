@@ -1,20 +1,27 @@
+:root {
+    --app-height: 100%;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #210446;
-    color: white;
+    color: #fff;
     font-family: "Raleway", sans-serif;
 }
 
 html, body {
+    height: 100%;
     overflow-x: hidden;
 }
 
 section {
     height: 100vh;
+    padding: 0 2rem;
 }
 
 .navbar {
@@ -24,6 +31,8 @@ section {
     height: 3rem;
     justify-content: space-between;
     padding: 0 2rem;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar__logo {
@@ -39,6 +48,34 @@ section {
 .navbar__list {
     display: flex;
     list-style: none;
+}
+
+.navbar__list_desktop {
+    display: none;
+}
+
+.navbar__list_mobile {
+    align-items: center;
+    background-color: #16052C;
+    flex-direction: column;
+    height: calc(var(--app-height) - 3rem);
+    justify-content: space-around;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    top: 3rem;
+    width: 100%;
+}
+
+.navbar__list_mobile.navbar__list_visible {
+    transform: translateX(0%);
+}
+
+.navbar__list_mobile .navbar__link {
+    opacity: 0;
 }
 
 .navbar__link {
@@ -57,8 +94,39 @@ section {
     font-weight: 600;
 }
 
-.navbar__list_mobile {
-    display: none;
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.navbar__burger {
+    cursor: pointer;
+}
+
+.navbar__burger_toggled .navbar__line-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar__burger_toggled .navbar__line-2 {
+    opacity: 0;
+}
+
+.navbar__burger_toggled .navbar__line-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navbar__line-1, .navbar__line-2, .navbar__line-3 {
+    height: 3px;
+    width: 1.5rem;
+    margin: 5px 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .hero__outer-copy-container {
@@ -77,10 +145,6 @@ section {
     font-size: 2rem;
 }
 
-.hero__title, .hero__text {
-    padding-left: 2rem;
-}
-
 .services {
     background-color: #440041;
 }
@@ -89,3 +153,11 @@ section {
     background-color: #16052C;
 }
 
+@media only screen and (min-width: 600px) {
+    .navbar__list_desktop {
+        display: flex;
+    }
+    .navbar__burger {
+        display: none;
+    }
+}
