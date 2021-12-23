@@ -25,6 +25,24 @@ const navSlide = () => {
   
       burger.classList.toggle("navbar__burger_toggled");
     });
+
+    window.addEventListener("resize", () => {
+        if (window.matchMedia("(min-width: 600px)").matches) {
+          if (
+            navList.classList.contains("navbar__list_visible") 
+            &&
+            burger.classList.contains("navbar__burger_toggled")
+          ) {
+              
+            navLinks.forEach((link) => {
+                  link.style.animation = "";
+                })
+    
+            navList.classList.remove("navbar__list_visible");
+            burger.classList.remove("navbar__burger_toggled");
+          }
+        }
+      });
 }
 
 appHeight()

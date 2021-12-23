@@ -157,6 +157,9 @@ section {
     .navbar__list_desktop {
         display: flex;
     }
+    .navbar__list_mobile {
+        display: none;
+    }
     .navbar__burger {
         display: none;
     }
