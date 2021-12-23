@@ -66,7 +66,7 @@ section {
 }
 
 .navbar__logo,
-.navbar__link {
+.navbar__item {
     text-transform: uppercase;
 }
 
@@ -99,28 +99,33 @@ section {
     transform: translateX(0%);
 }
 
-.navbar__list_mobile .navbar__link {
+.navbar__list_mobile .navbar__item {
     opacity: 0;
 }
 
-.navbar__link {
+.navbar__item {
     margin-right: 1rem;
 }
 
-.navbar__link:last-of-type {
+.navbar__item:last-of-type {
     margin: 0;
 }
 
-.navbar__link:hover {
+.navbar__item:hover {
     cursor: pointer;
 }
 
-.navbar__link_active,
-.navbar__link:hover {
+.navbar__item_active,
+.navbar__item:hover {
     font-weight: 600;
 }
 
-@keyframes navLinkFade {
+.navbar__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+@keyframes navItemFade {
     from {
         opacity: 0;
         transform: translateX(50px);
