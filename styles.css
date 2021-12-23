@@ -211,6 +211,11 @@ section {
     max-width: 900px;
 }
 
+.services__icon {
+    width: 30px;
+    margin-bottom: 1rem;
+}
+
 .services__item {
     background-color: #670062;
     border-radius: 3px;
