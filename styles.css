@@ -37,10 +37,10 @@ h3 {
     text-align: center;
 }
 
-h1,
+/* h1,
 h2 {
     font-family: "Spectral", serif;
-}
+} */
 
 footer {
     background-color: #16052C;
@@ -214,7 +214,6 @@ section {
 }
 
 .services__icon {
-    width: 30px;
     margin-bottom: 1rem;
 }
 
@@ -257,7 +256,6 @@ section {
 
 .tools__icon {
     margin-bottom: 1rem;
-    width: 50px;
 }
 
 .tools__item-title {
