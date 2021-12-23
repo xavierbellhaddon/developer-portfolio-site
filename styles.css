@@ -35,6 +35,7 @@ nav, section, footer {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar__logo {
@@ -134,13 +135,15 @@ nav, section, footer {
 .hero {
     margin-top: 3rem;
     height: calc(100vh - 3rem);
+    padding: 0;
 }
 
 .hero__outer-copy-container {
     align-items: center;
     display: flex;
-    height: 100%;
+    height: 50%;
     justify-content: center;
+    padding: 0 2rem;
 }
 
 .hero__title {
@@ -150,6 +153,13 @@ nav, section, footer {
 
 .hero__text {
     font-size: 2rem;
+}
+
+.hero__image {
+    /* replace background with image */
+    background: gray;
+    /*  */
+    height: 50%;
 }
 
 .services {
@@ -165,5 +175,21 @@ nav, section, footer {
     }
     .navbar__burger {
         display: none;
+    }
+    .hero {
+        display: flex;
+        margin-top: 3rem;
+        height: calc(100vh - 3rem);
+        padding-right: 0;
+    }
+    
+    .hero__outer-copy-container {
+        height: 100%;
+        width: 40%;
+    }
+    .hero__image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        height: 100%;
+        width: 60%;
     }
 }
