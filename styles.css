@@ -146,6 +146,8 @@ section {
 }
 
 .navbar__burger {
+    background: none;
+    border: none;
     cursor: pointer;
 }
 
