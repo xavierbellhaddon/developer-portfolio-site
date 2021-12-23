@@ -19,8 +19,11 @@ html, body {
     overflow-x: hidden;
 }
 
-section {
-    height: 100vh;
+footer {
+    background-color: #16052C;
+}
+
+nav, section, footer {
     padding: 0 2rem;
 }
 
@@ -30,7 +33,6 @@ section {
     display: flex;
     height: 3rem;
     justify-content: space-between;
-    padding: 0 2rem;
     position: fixed;
     width: 100%;
 }
@@ -129,6 +131,11 @@ section {
     transition: all 0.3s ease;
 }
 
+.hero {
+    margin-top: 3rem;
+    height: calc(100vh - 3rem);
+}
+
 .hero__outer-copy-container {
     align-items: center;
     display: flex;
@@ -147,10 +154,6 @@ section {
 
 .services {
     background-color: #440041;
-}
-
-.footer {
-    background-color: #16052C;
 }
 
 @media only screen and (min-width: 600px) {
