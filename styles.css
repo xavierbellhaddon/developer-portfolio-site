@@ -42,6 +42,10 @@ h2 {
     font-family: "Spectral", serif;
 }
 
+span.magenta {
+    color:#8C0086;
+}
+
 footer {
     background-color: #16052C;
 }
@@ -274,6 +278,32 @@ section {
     flex-direction: column;
     margin: 2rem;
     width: 75px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact__button {
+    align-self: center;
+    background-color: #8C0086;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    height: 50px;
+    width: 150px;
 }
 
 @media only screen and (min-width: 600px) {
