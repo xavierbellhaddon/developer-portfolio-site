@@ -37,11 +37,6 @@ h3 {
     text-align: center;
 }
 
-/* h1,
-h2 {
-    font-family: "Spectral", serif;
-} */
-
 footer {
     background-color: #16052C;
 }
@@ -299,6 +294,7 @@ section {
     font-size: 1rem;
     font-weight: 800;
     height: 50px;
+    text-transform: uppercase;
     width: 150px;
 }
 
