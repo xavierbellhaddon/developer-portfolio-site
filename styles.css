@@ -359,6 +359,11 @@ section {
     color: #210446;
 }
 
+.g-recaptcha div:first-child
+  {
+    margin: auto;
+  }
+
 .main-contact__button {
     width: 100%;
     margin-top: 1.6rem;
