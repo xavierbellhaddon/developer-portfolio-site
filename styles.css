@@ -19,12 +19,13 @@ body {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
-}
-
-/* html, */
-body {
     height: 100%;
     overflow-x: hidden;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 100%;
 }
 
 h1 {
@@ -303,19 +304,25 @@ section {
 .index-contact__text {
     font-size: 1.5rem;
     margin-bottom: 3.2rem;
-    max-width: 60rem;
     text-align: center;
 }
 
 .index-contact__button {
+    width: 15rem;
+}
+
+.index-contact__button, .success__button {
     align-items: center;
     display: flex;
     justify-content: center;
     text-decoration: none;
-    width: 15rem;
 }
 
-.index-contact__button, .main-contact__button {
+.main-contact__button, .success__button {
+    margin-bottom: 1.6rem;
+}
+
+.index-contact__button, .main-contact__button, .success__button {
     align-self: center;
     background-color: #8C0086;
     border: none;
@@ -329,7 +336,7 @@ section {
     transition: background-color 0.5s ease-in;
 }
 
-.index-contact__button:hover, .main-contact__button:hover {
+.index-contact__button:hover, .main-contact__button:hover, .success__button:hover {
     background-color: #a7159f;
     transition: background-color 0.5s ease-in;
 } 
@@ -380,7 +387,28 @@ section {
 
 .main-contact__button {
     width: 100%;
-    margin-bottom: 1.6rem;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.success__inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success__button {
+    width: 20rem;
+}
+
+.success__title, .success__text {
+    text-align: center;
+    margin-bottom: 3.2rem;
 }
 
 .footer {
