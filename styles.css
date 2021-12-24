@@ -168,7 +168,7 @@ section {
 .navbar__line-2,
 .navbar__line-3 {
     height: 3px;
-    width: 1.5rem;
+    width: 2rem;
     margin: 5px 0;
     background-color: #fff;
     transition: all 0.3s ease;
