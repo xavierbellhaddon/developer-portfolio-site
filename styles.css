@@ -362,7 +362,7 @@ section {
 .g-recaptcha div:first-child
   {
     margin: auto;
-    width: 100%;
+    width: 600px;
   }
 
 .main-contact__button {
