@@ -359,10 +359,8 @@ section {
     color: #210446;
 }
 
-.g-recaptcha div:first-child
-  {
+.g-recaptcha div:first-child {
     margin: auto;
-    width: 600px;
   }
 
 .main-contact__button {
