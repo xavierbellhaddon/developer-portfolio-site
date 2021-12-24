@@ -335,24 +335,6 @@ section {
     margin-bottom: 1rem;
 }
 
-/* .name {
-    margin-right: 8px;
-}
-
-.email {
-    margin-left: 8px;
-} */
-
-/* .name,
-.email {
-    width: 142px;
-} */
-
-/* .name,
-.email {
-    width: 292px;
-} */
-
 .message {
     margin-top: 1rem;
     resize: none;
@@ -378,6 +360,7 @@ section {
 
 .footer {
     background-color: #16052C;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     height: 200px;
