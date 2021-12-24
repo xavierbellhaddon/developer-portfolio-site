@@ -320,9 +320,11 @@ section {
 } 
 
 .main-contact {
+    align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 4.8rem;
+    height: calc(100vh - 4.8rem);
     background-color: #440041;
 }
 
