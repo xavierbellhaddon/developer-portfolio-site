@@ -395,7 +395,7 @@ section {
         display: flex;
         margin-top: 4.8rem;
         padding-right: 0;
-        height: 100vh;
+        height: calc(100vh - 4.8rem);
     }
 
     .hero__outer-copy-container {
@@ -405,8 +405,13 @@ section {
 
     .hero__image {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-        height: 100vh;
+        height: 100%;
         width: 50%;
+    }
+    .services__item {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+        width: 35rem;
     }
     .main-contact__form-container {
         width: 60rem;
@@ -418,17 +423,10 @@ section {
         margin: 0;
         margin-right: 0.8rem;
     }
-    
     .email {
         margin-left: 0.8rem;
     }
     .name, .email {
         width: 29.2rem;
-    }
-
-    .services__item {
-        margin-left: 1.6rem;
-        margin-right: 1.6rem;
-        width: 35rem;
     }
 }
