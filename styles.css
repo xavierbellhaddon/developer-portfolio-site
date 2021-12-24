@@ -125,14 +125,29 @@ section {
     cursor: pointer;
 }
 
-.navbar__item_active,
-.navbar__item:hover {
-    font-weight: 600;
-}
-
 .navbar__link {
     color: inherit;
     text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar__link:after {
+    background-color: #8C0086;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    width: 100%;
+}
+
+.navbar__link:hover:after, .navbar__link_active:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 @keyframes navItemFade {
