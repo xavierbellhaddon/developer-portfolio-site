@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +20,14 @@
     <nav class="navbar">
       <a href="index.html" class="navbar__logo">Xavier Haddon</a>
       <ul class="navbar__list navbar__list_desktop">
-        <li class="navbar__link navbar__link_active">Home</li>
-        <li class="navbar__link">About</li>
-        <li class="navbar__link">Contact</li>
+        <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+        <li class="navbar__item navbar__item_active"><a href="#" class="navbar__link">Contact</a></li>
       </ul>
       <ul class="navbar__list navbar__list_mobile">
-        <li class="navbar__link">Home</li>
-        <li class="navbar__link">About</li>
-        <li class="navbar__link">Contact</li>
+        <li class="navbar__item navbar__item_active"><a class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+        <li class="navbar__item navbar__item_active"><a href="#" class="navbar__link">Contact</a></li>
       </ul>
       <button class="navbar__burger">
         <div class="navbar__line-1"></div>
@@ -35,6 +35,19 @@
         <div class="navbar__line-3"></div>
       </button>
     </nav>
+    <section class="main-contact">
+      <div class="main-contact__form-container">
+        <h2 class="main-contact__title">Get in Touch</h2>
+        <form action="" class="main-contact__form">
+          <div class="main-contact__text-input-container">
+            <input type="text" class="name" id="name" name="name" aria-label="Name" placeholder="Name">
+            <input type="text" class="email" id="email" name="email" aria-label="Email" placeholder="Email">
+          </div>
+          <textarea name="message" class="message" id="message" rows="10" aria-label="Message" placeholder="Message"></textarea>
+          <button class="main-contact__button">Submit</button>
+        </form>
+      </div>
+    </section>
     <footer class="footer">
       <p class="footer__copyright">© 2021 Xavier Haddon</p>
     </footer>
