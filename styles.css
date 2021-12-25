@@ -323,7 +323,9 @@ section {
 
 .index-contact__button, .main-contact__button, .success__button {
     align-self: center;
-    background-color: #8C0086;
+    background: linear-gradient(to left, #8C0086 50%, #b624af 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
     border: none;
     border-radius: 3px;
     color: white;
@@ -332,12 +334,12 @@ section {
     font-weight: 800;
     padding: 1.6rem;
     text-transform: uppercase;
-    transition: background-color 0.5s ease-in;
+    transition: background 0.5s ease-in;
 }
 
 .index-contact__button:hover, .main-contact__button:hover, .success__button:hover {
-    background-color: #a7159f;
-    transition: background-color 0.5s ease-in;
+    background-position: left bottom;
+    transition: background 0.5s ease-in;
 } 
 
 .about {
