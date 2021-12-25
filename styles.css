@@ -412,8 +412,11 @@ section {
 }
 
 .main-contact__email {
-    color: inherit;
     margin-bottom: 3.2rem;
+}
+
+.main-contact__phone, .main-contact__email {
+    color: inherit;
 }
 
 .main-contact__text-input-container {
