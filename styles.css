@@ -320,21 +320,22 @@ section {
 }
 
 .index-contact__button,
-.success__button {
+.success__button,
+.error__button {
     align-items: center;
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-.main-contact__button,
-.success__button {
+.main-contact__button {
     margin-bottom: 1.6rem;
 }
 
 .index-contact__button,
 .main-contact__button,
-.success__button {
+.success__button,
+.error__button {
     align-self: center;
     background: linear-gradient(to left, #8C0086 50%, #b624af 50%);
     background-position: right bottom;
@@ -352,7 +353,8 @@ section {
 
 .index-contact__button:hover,
 .main-contact__button:hover,
-.success__button:hover {
+.success__button:hover,
+.error__button:hover {
     background-position: left bottom;
     transition: background 0.5s ease-in;
 }
@@ -453,25 +455,27 @@ section {
     width: 100%;
 }
 
-.success {
+.success, .error {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
 }
 
-.success__inner-container {
+.success__inner-container, .error__inner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.success__button {
+.success__button, .error__button {
     width: 20rem;
 }
 
 .success__title,
-.success__text {
+.success__text,
+.error__title,
+.error__text {
     text-align: center;
     margin-bottom: 3.2rem;
 }
