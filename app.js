@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded",function(){
+    let node = document.querySelector('.preload');
+    node.classList.remove('preload');
+  });
+
 const appHeight = () => {
     document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
 }

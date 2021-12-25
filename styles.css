@@ -2,6 +2,13 @@
     --app-height: 100%;
 }
 
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
 *,
 *::before,
 *::after {
@@ -23,7 +30,8 @@ body {
     overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     min-width: 100%;
 }
@@ -146,7 +154,8 @@ section {
     width: 100%;
 }
 
-.navbar__link:hover:after, .navbar__link_active:after {
+.navbar__link:hover:after,
+.navbar__link_active:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -310,18 +319,22 @@ section {
     width: 15rem;
 }
 
-.index-contact__button, .success__button {
+.index-contact__button,
+.success__button {
     align-items: center;
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-.main-contact__button, .success__button {
+.main-contact__button,
+.success__button {
     margin-bottom: 1.6rem;
 }
 
-.index-contact__button, .main-contact__button, .success__button {
+.index-contact__button,
+.main-contact__button,
+.success__button {
     align-self: center;
     background: linear-gradient(to left, #8C0086 50%, #b624af 50%);
     background-position: right bottom;
@@ -337,10 +350,12 @@ section {
     transition: background 0.5s ease-in;
 }
 
-.index-contact__button:hover, .main-contact__button:hover, .success__button:hover {
+.index-contact__button:hover,
+.main-contact__button:hover,
+.success__button:hover {
     background-position: left bottom;
     transition: background 0.5s ease-in;
-} 
+}
 
 .about {
     display: flex;
@@ -358,7 +373,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 3.2rem;;
+    margin-bottom: 3.2rem;
+    ;
 }
 
 .about__title {
@@ -401,7 +417,9 @@ section {
     width: 100%;
 }
 
-.name, .email, .message {
+.name,
+.email,
+.message {
     border: none;
     border-radius: 3px;
     color: #440041;
@@ -409,13 +427,15 @@ section {
     padding: 1.6rem;
 }
 
-.name::placeholder, .email::placeholder, .message::placeholder {
+.name::placeholder,
+.email::placeholder,
+.message::placeholder {
     color: #210446;
 }
 
 .g-recaptcha div:first-child {
     margin: auto;
-  }
+}
 
 .main-contact__button {
     width: 100%;
@@ -438,7 +458,8 @@ section {
     width: 20rem;
 }
 
-.success__title, .success__text {
+.success__title,
+.success__text {
     text-align: center;
     margin-bottom: 3.2rem;
 }
@@ -487,42 +508,53 @@ section {
         height: 100%;
         width: 50%;
     }
+
     .services__item {
         margin-left: 1.6rem;
         margin-right: 1.6rem;
         width: 35rem;
     }
+
     .about__outer-container {
         flex-direction: row;
         max-width: 105.3rem;
     }
+
     .about__copy-container {
         padding-right: 3.2rem;
         width: 60%;
     }
+
     .about__image-container {
         justify-content: center;
         width: 40%;
         max-width: 42.119rem;
     }
+
     .about__image {
         width: 100%;
         object-fit: contain;
     }
+
     .main-contact__form-container {
         width: 60rem;
     }
+
     .main-contact__text-input-container {
         flex-direction: row;
     }
+
     .name {
         margin: 0;
         margin-right: 0.8rem;
     }
+
     .email {
         margin-left: 0.8rem;
     }
-    .name, .email {
+
+    .name,
+    .email {
         width: 29.2rem;
     }
 }
