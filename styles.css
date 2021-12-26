@@ -460,6 +460,10 @@ section {
     width: 100%;
 }
 
+.success {
+    background-color: #440041;
+}
+
 .success, .error {
     display: flex;
     flex-direction: column;
