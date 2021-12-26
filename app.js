@@ -1,16 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let node = document.querySelector(".preload");
-  node.classList.remove("preload");
-});
-
-window.onscroll = () => {
-  navScroll();
-};
-
 const navSlide = () => {
-  const burger = document.querySelector(".navbar__burger");
-  const navList = document.querySelector(".navbar__list_mobile");
-  const navItems = document.querySelectorAll(
+  let burger = document.querySelector(".navbar__burger");
+  let navList = document.querySelector(".navbar__list_mobile");
+  let navItems = document.querySelectorAll(
     ".navbar__list_mobile .navbar__item"
   );
 
@@ -49,5 +40,18 @@ const navSlide = () => {
   });
 };
 
-navSlide();
+let path = window.location.pathname;
+let page = path.split("/").pop();
+
+if (page !== "success.html" && page !== "404.html") {
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let node = document.querySelector(".preload");
+    node.classList.remove("preload");
+  });
+
+  navSlide();
+}
+
+
 
