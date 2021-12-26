@@ -30,6 +30,10 @@ body {
     overflow-x: hidden;
 }
 
+body.overflow-hidden {
+    overflow: hidden;
+}
+
 html,
 body {
     min-height: 100vh;
