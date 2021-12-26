@@ -14,22 +14,6 @@ window.addEventListener("resize", appHeight);
 
 appHeight();
 
-const navScroll = () => {
-  const navbar = document.querySelector(".navbar");
-  const navList = document.querySelector(".navbar__list_mobile");
-  const mainContentContainer = document.querySelector(".main-content-container");
-
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    navbar.classList.add("navbar_scrolled");
-    navList.classList.add("navbar__list_scrolled");
-    mainContentContainer.classList.add("main-content-container_scrolled");
-  } else {
-    navbar.classList.remove("navbar_scrolled");
-    navList.classList.remove("navbar__list_scrolled");
-    mainContentContainer.classList.remove("main-content-container_scrolled");
-  }
-}
-
 window.onscroll = () => {
   navScroll();
 };
@@ -42,7 +26,6 @@ const navSlide = () => {
   );
 
   burger.addEventListener("click", () => {
-    document.body.classList.toggle("fixed");
     navList.classList.toggle("navbar__list_visible");
 
     navItems.forEach((item, index) => {
@@ -68,7 +51,6 @@ const navSlide = () => {
           item.style.animation = "";
         });
 
-        document.body.classList.remove("fixed");
         navList.classList.remove("navbar__list_visible");
         burger.classList.remove("navbar__burger_toggled");
       }
@@ -77,3 +59,4 @@ const navSlide = () => {
 };
 
 navSlide();
+
