@@ -385,7 +385,7 @@ section {
 .about {
     display: flex;
     justify-content: center;
-    min-height: calc(100vh - 4.8rem);
+    min-height: calc(100vh - 8rem);
 }
 
 .about__outer-container {
@@ -417,7 +417,7 @@ section {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-height: calc(100vh - 4.8rem);
+    min-height: calc(100vh - 8rem);
     background-color: #440041;
 }
 
@@ -534,7 +534,7 @@ section {
     .hero {
         display: flex;
         padding-right: 0;
-        height: calc(100vh - 4.8rem);
+        height: calc(100vh - 8rem);
     }
 
     .hero__outer-copy-container {
