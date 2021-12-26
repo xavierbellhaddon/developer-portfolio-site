@@ -30,8 +30,9 @@ body {
     overflow-x: hidden;
 }
 
-body.overflow-hidden {
-    overflow: hidden;
+body.fixed {
+    position: fixed;
+    overflow-y: scroll;
 }
 
 html,

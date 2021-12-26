@@ -42,7 +42,7 @@ const navSlide = () => {
   );
 
   burger.addEventListener("click", () => {
-    document.body.classList.toggle("overflow-hidden");
+    document.body.classList.toggle("fixed");
     navList.classList.toggle("navbar__list_visible");
 
     navItems.forEach((item, index) => {
@@ -68,7 +68,7 @@ const navSlide = () => {
           item.style.animation = "";
         });
 
-        document.body.classList.remove("overflow-hidden");
+        document.body.classList.remove("fixed");
         navList.classList.remove("navbar__list_visible");
         burger.classList.remove("navbar__burger_toggled");
       }
