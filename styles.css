@@ -30,6 +30,10 @@ body {
     overflow-x: hidden;
 }
 
+body.overflow-hidden {
+    overflow: hidden;
+}
+
 html,
 body {
     min-height: 100vh;
@@ -70,12 +74,17 @@ section {
     align-items: center;
     background-color: #16052C;
     display: flex;
-    height: 4.8rem;
+    height: 8rem;
     justify-content: space-between;
     position: fixed;
     top: 0;
+    transition: height 0.5s ease-in;
     width: 100%;
     z-index: 1;
+}
+
+.navbar_scrolled {
+    height: 4.8rem;
 }
 
 .navbar__logo {
@@ -103,15 +112,21 @@ section {
     backdrop-filter: blur(5px);
     background-color: rgb(22, 5, 44, 0.95);
     flex-direction: column;
-    height: calc(var(--app-height) - 4.8rem);
+    height: calc(var(--app-height) - 8rem);
+    height: var(--app-height);
     justify-content: space-around;
-    /* margin: 0; */
+    padding-top: 8rem;
     position: fixed;
     right: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    top: 4.8rem;
+    top: 0;
     width: 100%;
+    z-index: -1;
+}
+
+.navbar__list_mobile.navbar__list_scrolled {
+    padding-top: 4.8rem;
 }
 
 .navbar__list_mobile.navbar__list_visible {
@@ -199,8 +214,16 @@ section {
     transition: all 0.3s ease;
 }
 
-.hero {
+.main-content-container {
+    transition: margin-top 0.5s ease-in;
+    margin-top: 8rem;
+}
+
+.main-content-container_scrolled {
     margin-top: 4.8rem;
+}
+
+.hero {
     padding: 0;
 }
 
@@ -362,7 +385,6 @@ section {
 .about {
     display: flex;
     justify-content: center;
-    margin-top: 4.8rem;
     min-height: calc(100vh - 4.8rem);
 }
 
@@ -395,7 +417,6 @@ section {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 4.8rem;
     min-height: calc(100vh - 4.8rem);
     background-color: #440041;
 }
@@ -512,7 +533,6 @@ section {
 
     .hero {
         display: flex;
-        margin-top: 4.8rem;
         padding-right: 0;
         height: calc(100vh - 4.8rem);
     }
