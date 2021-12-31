@@ -265,8 +265,19 @@ section {
 
 /* Add projects section below */
 
+.projects__item {
+    max-width: 100%;
+}
 
+.projects__video-mask {
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    overflow: hidden;
+}
 
+.projects__video {
+    width: 100%;
+}
 
 /*   */
 
