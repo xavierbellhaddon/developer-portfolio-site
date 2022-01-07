@@ -247,7 +247,9 @@ section {
 }
 
 .services__icon {
+    height: 50px;
     margin-bottom: 1.6rem;
+    width: 50px;
 }
 
 .services__item {
@@ -544,11 +546,6 @@ section {
         margin-left: 1.6rem;
         margin-right: 1.6rem;
         width: 35rem;
-    }
-
-    .services__icon {
-        height: 50px;
-        width: 50px;
     }
 
     .about__outer-container {
