@@ -269,12 +269,6 @@ section {
     max-width: 100%;
 }
 
-.projects__video-mask {
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
-    overflow: hidden;
-}
-
 .projects__video {
     width: 100%;
 }
@@ -297,7 +291,9 @@ section {
 }
 
 .tools__icon {
+    height: 80px;
     margin-bottom: 1.6rem;
+    width: 80px;
 }
 
 .tools__item-title {
@@ -548,6 +544,11 @@ section {
         margin-left: 1.6rem;
         margin-right: 1.6rem;
         width: 35rem;
+    }
+
+    .services__icon {
+        height: 50px;
+        width: 50px;
     }
 
     .about__outer-container {
