@@ -101,7 +101,7 @@ section {
 
 .navbar__list_mobile {
     align-items: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0.5rem);
     background-color: rgb(22, 5, 44, 0.95);
     flex-direction: column;
     height: calc(100vh - 8rem);
@@ -145,7 +145,7 @@ section {
     background-color: #8C0086;
     bottom: 0;
     content: '';
-    height: 2px;
+    height: 0.2rem;
     left: 0;
     position: absolute;
     transform: scaleX(0);
@@ -163,12 +163,12 @@ section {
 @keyframes navItemFade {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(5rem);
     }
 
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
 
@@ -178,7 +178,7 @@ section {
 }
 
 .navbar__burger_toggled .navbar__line-1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-0.5rem, 0.6rem);
 }
 
 .navbar__burger_toggled .navbar__line-2 {
@@ -186,15 +186,15 @@ section {
 }
 
 .navbar__burger_toggled .navbar__line-3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-0.5rem, -0.6rem);
 }
 
 .navbar__line-1,
 .navbar__line-2,
 .navbar__line-3 {
-    height: 3px;
+    height: 0.3rem;
     width: 2rem;
-    margin: 5px 0;
+    margin: 0.5rem 0;
     background-color: #fff;
     transition: all 0.3s ease;
 }
@@ -247,14 +247,14 @@ section {
 }
 
 .services__icon {
-    height: 50px;
+    height: 5rem;
     margin-bottom: 1.6rem;
-    width: 50px;
+    width: 5rem;
 }
 
 .services__item {
     background-color: #670062;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     padding: 3.2rem;
     margin-top: 3.2rem;
     text-align: center;
@@ -302,9 +302,9 @@ section {
 }
 
 .tools__icon {
-    height: 80px;
+    height: 8rem;
     margin-bottom: 1.6rem;
-    width: 80px;
+    width: 8rem;
 }
 
 .tools__item-title {
@@ -363,7 +363,7 @@ section {
     background-position: right bottom;
     background-size: 200% 100%;
     border: none;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     color: white;
     font-family: inherit;
     font-size: 1.6rem;
@@ -458,7 +458,7 @@ section {
 .email,
 .message {
     border: none;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     color: #440041;
     font-family: inherit;
     padding: 1.6rem;
