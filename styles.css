@@ -265,11 +265,16 @@ section {
     text-align: center;
 }
 
+.projects__inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .projects__item {
     background-color: hsl(266, 89%, 20%);
     border-radius: 0.3rem;
     margin-bottom: 3.2rem;
-    max-width: 100%;
     padding: 3.2rem;
 }
 
@@ -550,6 +555,12 @@ section {
         margin-left: 1.6rem;
         margin-right: 1.6rem;
         width: 35rem;
+    }
+
+    .projects__item {
+        width: 80rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
     }
 
     .about__outer-container {
