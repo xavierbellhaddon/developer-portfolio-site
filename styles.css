@@ -359,18 +359,18 @@ section {
 .success__button,
 .error__button {
     align-self: center;
-    background: linear-gradient(to left, #8C0086 50%, #b624af 50%);
+    background: linear-gradient(to left, transparent 50%, #b624af 50%);
     background-position: right bottom;
     background-size: 200% 100%;
-    border: none;
+    border: 0.2rem solid #b624af;
     border-radius: 0.3rem;
-    color: white;
+    color: #b624af;
     font-family: inherit;
     font-size: 1.6rem;
     font-weight: 800;
     padding: 1.6rem;
     text-transform: uppercase;
-    transition: background 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .index-contact__button:hover,
@@ -378,7 +378,8 @@ section {
 .success__button:hover,
 .error__button:hover {
     background-position: left bottom;
-    transition: background 0.5s ease-in;
+    color: white;
+    transition: all 0.5s ease-in;
 }
 
 .about {
