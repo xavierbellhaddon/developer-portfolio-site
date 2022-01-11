@@ -68,7 +68,6 @@ section {
 
 .navbar {
     align-items: center;
-    background-color: #16052C;
     display: flex;
     height: 8rem;
     justify-content: space-between;
@@ -77,6 +76,11 @@ section {
     transition: height 0.5s ease-in;
     width: 100%;
     z-index: 1;
+}
+
+.navbar, .navbar__list_mobile {
+    backdrop-filter: blur(0.5rem);
+    background-color: rgb(22, 5, 44, 0.95);
 }
 
 .navbar__logo {
@@ -101,8 +105,6 @@ section {
 
 .navbar__list_mobile {
     align-items: center;
-    backdrop-filter: blur(0.5rem);
-    background-color: rgb(22, 5, 44, 0.95);
     flex-direction: column;
     height: calc(100vh - 8rem);
     justify-content: space-around;
