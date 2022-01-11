@@ -78,9 +78,15 @@ section {
     z-index: 1;
 }
 
-.navbar, .navbar__list_mobile {
+.navbar::after {
     backdrop-filter: blur(0.5rem);
     background-color: rgb(22, 5, 44, 0.95);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 .navbar__logo {
@@ -105,6 +111,8 @@ section {
 
 .navbar__list_mobile {
     align-items: center;
+    backdrop-filter: blur(0.5rem);
+    background-color: rgb(22, 5, 44, 0.95);
     flex-direction: column;
     height: calc(100vh - 8rem);
     justify-content: space-around;
