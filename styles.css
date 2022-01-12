@@ -424,10 +424,15 @@ section {
 }
 
 .about__image-container {
+    align-items: center;
     display: flex;
+    padding-bottom: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .about__image {
+    box-shadow: 25px 25px 0px 5px #16052C;
+    height: min-content;
     width: 100%;
 }
 
