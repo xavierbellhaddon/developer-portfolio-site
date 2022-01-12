@@ -53,5 +53,8 @@ if (page !== "success.html" && page !== "404.html") {
   navSlide();
 }
 
+let copyrightYear = document.querySelector(".year");
+let currentYear = new Date().getFullYear();
 
+copyrightYear.innerText = currentYear;
 
