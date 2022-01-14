@@ -453,7 +453,7 @@ section {
 }
 
 .main-contact__phone {
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
 }
 
 .main-contact__email {
@@ -462,6 +462,7 @@ section {
 
 .main-contact__phone, .main-contact__email {
     color: inherit;
+    text-decoration: none;
 }
 
 .main-contact__text-input-container {
