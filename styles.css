@@ -291,12 +291,15 @@ section {
 .projects__item {
     border-radius: 0.3rem;
     margin-bottom: 3.2rem;
-    padding: 2.5rem;
-    padding-left: 0;
 }
 
 .projects__item-title {
     margin-bottom: 1.6rem;
+}
+
+.projects__video-container {
+    padding: 2.5rem;
+    padding-left: 0;
 }
 
 .tools {
