@@ -39,11 +39,19 @@
         <a href="mailto:xavier@xavierhaddon.dev" class="main-contact__email">xavier@xavierhaddon.dev</a>
         <form method="post" action="success.html" class="main-contact__form" data-netlify="true">
           <div class="main-contact__text-input-container">
-            <input type="text" class="name" id="name" name="name" aria-label="Name" placeholder="Name">
-            <input type="text" class="email" id="email" name="email" aria-label="Email" placeholder="Email">
+            <div class="main-contact__field main-contact__name-field">
+              <label for="name" class="main-contact__label">Name</label>
+              <input type="text" class="name" id="name" name="name" placeholder="Your name...">
+            </div>
+            <div class="main-contact__field main-contact__email-field">
+              <label for="email" class="main-contact__label">Email</label>
+              <input type="text" class="email" id="email" name="email" placeholder="Your email address...">
+            </div>
           </div>
-          <textarea name="message" class="message" id="message" rows="10" aria-label="Message"
-            placeholder="Message"></textarea>
+          <div class="main-contact__field">
+            <label for="message" class="main-contact__label">Message</label>
+            <textarea name="message" class="message" id="message" rows="10" placeholder="Your message..."></textarea>
+          </div>
           <button class="main-contact__button">Submit</button>
           <div data-netlify-recaptcha="true"></div>
         </form>

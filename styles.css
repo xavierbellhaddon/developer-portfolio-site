@@ -469,12 +469,21 @@ section {
     flex-direction: column;
 }
 
-.name {
-    margin-bottom: 3.2rem;
+.main-contact__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+    overflow: hidden;
+}
+
+.main-contact__label {
+    background-color: #670062;
+    padding: 0.8rem;
+    padding-left: 1.6rem;
 }
 
 .message {
-    margin: 3.2rem 0;
+    margin-bottom: 1.6rem;
     resize: none;
     width: 100%;
 }
@@ -483,7 +492,6 @@ section {
 .email,
 .message {
     border: none;
-    border-radius: 0.3rem;
     color: #440041;
     font-family: inherit;
     padding: 1.6rem;
@@ -620,13 +628,12 @@ section {
         flex-direction: row;
     }
 
-    .name {
-        margin: 0;
-        margin-right: 1.6rem;
+    .main-contact__name-field {
+        margin-right: 0.8rem;
     }
 
-    .email {
-        margin-left: 1.6rem;
+    .main-contact__email-field {
+        margin-left: 0.8rem;
     }
 
     .name,
