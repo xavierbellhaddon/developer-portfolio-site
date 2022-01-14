@@ -571,7 +571,7 @@ section {
 
     .hero {
         display: flex;
-        height: calc(100vh - 8rem);
+        min-height: calc(100vh - 8rem);
         justify-content: center;
     }
 
@@ -586,8 +586,8 @@ section {
     }
 
     .hero__video-container {
-        padding: 0;
-        padding-right: 5.7rem;
+        padding: 5.7rem;
+        padding-left: 3.2rem;
         width: 50%;
     }
 
