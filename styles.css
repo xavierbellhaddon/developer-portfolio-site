@@ -51,6 +51,12 @@ h3 {
     text-align: center;
 }
 
+video {
+    background: #000000;
+    box-shadow: 25px 25px 0px 5px #16052C;
+    width: 100%;
+}
+
 button {
     cursor: pointer;
 }
@@ -239,12 +245,6 @@ section {
     width: 100%;
 }
 
-.hero__video {
-    box-shadow: 25px 25px 0px 5px #16052C;
-    display: flex;
-    width: 100%;
-}
-
 .services {
     align-items: center;
     background-color: #440041;
@@ -298,13 +298,6 @@ section {
 
 .projects__item-title {
     margin-bottom: 1.6rem;
-}
-
-.projects__video {
-    box-shadow: 25px 25px 0px 5px #16052C;
-    background: #000000;
-    height: min-content;
-    width: 100%;
 }
 
 .tools {
@@ -643,5 +636,17 @@ section {
     .name,
     .email {
         width: 28.4rem;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    button, 
+    button:hover,
+    .navbar__list_mobile,
+    .navbar__link:after,
+    .navbar__link:hover:after,
+    .navbar__burger *,
+    .navbar__burger_toggled * {
+        transition: none;
     }
 }
