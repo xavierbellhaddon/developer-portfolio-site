@@ -234,6 +234,10 @@ section {
     padding: 3.2rem;
 }
 
+.hero__title, .hero__text, .about__title, .main-contact__title {
+    text-align: center;
+}
+
 .hero__text {
     font-size: 3.2rem;
 }
@@ -424,10 +428,6 @@ section {
     ;
 }
 
-.about__title {
-    text-align: left;
-}
-
 .about__image-container {
     align-items: center;
     display: flex;
@@ -454,6 +454,10 @@ section {
     display: flex;
     flex-direction: column;
     width: 30rem;
+}
+
+.main-contact__form {
+    width: 100%;
 }
 
 .main-contact__phone {
@@ -589,6 +593,10 @@ section {
         width: 50%;
     }
 
+    .hero__title, .hero__text, .about__title {
+        text-align: left;
+    }
+
     .hero__video-container {
         padding: 5.7rem;
         padding-left: 3.2rem;
@@ -635,7 +643,9 @@ section {
     .main-contact__form-container {
         width: 60rem;
     }
-
+    .main-contact__form {
+        width: auto;
+    }
     .main-contact__text-input-container {
         flex-direction: row;
     }
