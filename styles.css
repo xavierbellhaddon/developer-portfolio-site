@@ -365,6 +365,10 @@ section {
     text-decoration: none;
 }
 
+.main-contact__title, .success__title {
+    filter: drop-shadow(0.5rem 0.5rem 0 #210446);
+}
+
 .main-contact__button {
     margin-bottom: 3.2rem;
 }
