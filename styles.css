@@ -649,4 +649,7 @@ section {
     .navbar__burger_toggled * {
         transition: none;
     }
+    .navbar__list_mobile .navbar__item {
+        opacity: 1;
+    }
 }

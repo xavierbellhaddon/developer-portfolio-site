@@ -10,12 +10,16 @@ const navSlide = () => {
     document.body.classList.toggle("overflow-hidden");
 
     navItems.forEach((item, index) => {
-      if (item.style.animation) {
-        item.style.animation = "";
+      if (window.matchMedia("(prefers-reduced-motion)").matches) {
+        return;
       } else {
-        item.style.animation = `navItemFade 0.5s ease forwards ${
-          index / 7 + 0.5
-        }s`;
+        if (item.style.animation) {
+          item.style.animation = "";
+        } else {
+          item.style.animation = `navItemFade 0.5s ease forwards ${
+            index / 7 + 0.5
+          }s`;
+        }
       }
     });
 
