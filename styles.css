@@ -52,6 +52,10 @@ h3 {
     text-align: center;
 }
 
+p {
+    line-height: 3rem;
+}
+
 video {
     background: #000000;
     box-shadow: 25px 25px 0px 5px #16052C;
