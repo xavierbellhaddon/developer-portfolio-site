@@ -152,7 +152,7 @@ section {
 }
 
 .navbar__link:after {
-    background-color: #b624af;
+    background-color: #f22ce8;
     bottom: 0;
     content: '';
     height: 0.2rem;
@@ -378,12 +378,12 @@ section {
 .success__button,
 .error__button {
     align-self: center;
-    background: linear-gradient(to left, transparent 50%, #b624af 50%);
+    background: linear-gradient(to left, transparent 50%, #f22ce8 50%);
     background-position: right bottom;
     background-size: 200% 100%;
-    border: 0.2rem solid #b624af;
+    border: 0.2rem solid #f22ce8;
     border-radius: 0.3rem;
-    color: #b624af;
+    color: #f22ce8;
     font-family: inherit;
     font-size: 1.6rem;
     font-weight: 800;
@@ -461,7 +461,8 @@ section {
 }
 
 .main-contact__phone, .main-contact__email {
-    color: inherit;
+    color: #f22ce8;
+    font-weight: 600;
     text-decoration: none;
 }
 
